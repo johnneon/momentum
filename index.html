@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>momentum</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="wrapper" class="wrapper">
+        <button id="arrow-right" class="arrow__right">
+            <span></span>
+            <span></span>
+        </button>
+        <div id="backgrounds" class="backgrounds"></div>
+
+        <div class="content">
+            <div class="greeting">
+                <h3 id="date"></h3>
+                <time id="time" class="time">12:17:00 PM</time>
+                <h1>
+                    <span id="greeting">Good Afternoon</span>
+                    <span id="name" contenteditable="true"></span>
+                </h1>
+                <div class="weather">
+                    <div class="weather__col">
+                        <span id="city" class="city" contenteditable="true"></span>
+                    </div>
+                    <div class="weather__col weather__col-temp">
+                        <div class="icon">
+                            <img id="icon" src="" alt="">
+                        </div>
+                        <div id="degrees" class="degrees"></div>
+                    </div>
+                    <div class="weather__col">
+                        <div id="wind" class="wind"></div>
+                        <div id="humidity" class="humidity"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="focus">
+                <h2>What is your focus today?</h2>
+                <h2 id="focus" contenteditable="true"></h2>
+            </div>
+
+            <div class="quote">
+                <blockquote id="quote"></blockquote>
+                <button class="new__quote" id="newQuote">Get new quote</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
